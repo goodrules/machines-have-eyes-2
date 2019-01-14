@@ -1,0 +1,18 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<header>
+  <mat-toolbar color="primary">
+
+      
+
+      <span>
+          
+      </span>
+      <span class="spacer"></span>
+      <app-kiosk-nav></app-kiosk-nav>
+  </mat-toolbar> 
+
+</header>
+
+<main [@routerTransition]="getState(o)">
+    <router-outlet #o="outlet"></router-outlet>
+</main>

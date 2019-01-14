@@ -1,0 +1,88 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@font-face {
+    font-family: 'OPTILuna-Gothic';
+    src:url('./fonts/webfonts_OPTILuna-Gothic/OPTILuna-Gothic.ttf.woff') format('woff'),
+        url('./fonts/webfonts_OPTILuna-Gothic/OPTILuna-Gothic.ttf.svg#OPTILuna-Gothic') format('svg'),
+        url('./fonts/webfonts_OPTILuna-Gothic/OPTILuna-Gothic.ttf.eot'),
+        url('./fonts/webfonts_OPTILuna-Gothic/OPTILuna-Gothic.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "Oswald-Light";
+    src: url('./assets/fonts/Oswald-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Oswald-Medium";
+    src: url('./assets/fonts/Oswald-Medium.ttf') format('truetype');
+}
+body{
+    background-color: #CE472F !important;
+    font-family: "Oswald-Light", Times, serif;
+}
+.slide-title
+{
+    text-align: center;
+}
+
+.mat-button-wrapper{
+    font-family: "Oswald-Medium", Times, serif;
+    color: #CE472F;
+    font-size: 18px;
+    padding-left: 82px;
+    padding-right: 82px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    
+}
+
+html{
+    overflow: hidden;
+}
+
+.mat-raised-button{
+    height: 65px;
+}
+
+.white-icon{
+    color: white !important;
+}
+
+p{
+    font-family: "Oswald-Light", Times, serif;
+    color:white;
+    font-size: 22px;
+}
+
+h1{
+    font-family: "Oswald-Medium", Times, serif;
+    color:white;
+    font-size: 36px;
+}
+.block {
+  
+    float: left;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 5px;
+  }
+
+  .center{
+    margin: auto;
+    width: 50%;
+  }
+
+  video {
+    position: fixed;
+    right: 0;
+    bottom: -250px;
+    min-width: 100%;
+    min-height: 153%;
+    object-fit: fill;
+}

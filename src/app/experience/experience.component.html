@@ -1,0 +1,58 @@
+
+               
+                    <webcam 
+                    [trigger]="triggerObservable"
+                    [height]="480" 
+                    [width]="640" 
+                    (imageCapture)="handleImage($event)" 
+                    *ngIf="showWebcam"></webcam>
+                    <div class="snapshot" *ngIf="webcamImage">
+                        <h2>Nice one!</h2>
+                        <img class="captured-image" [src]="webcamImage.imageAsDataUrl"/>
+                    </div>
+                    <div class="center picture-button-container" style="width:70px;">
+                        <button mat-raised-button  (click)="handleTakePictureButton();" *ngIf="!webcamImage">TAKE PICTURE</button>
+                        <!--<button mat-raised-button (click)="triggerReset();" *ngIf="webcamImage">CONTINUE</button>-->
+                    </div>
+
+                    <div class="countdown" *ngIf="showCountdown">
+                        <span>{{counter}}</span>
+                    </div>
+               
+          
+        <div *ngIf="loading" class="fingerprint scanning">
+            
+        </div>
+        <div id="text" class="console">
+                <span class="element" ></span>
+        </div>
+        <!--
+        <mat-list class="webcam-tile" *ngIf="aps !== undefined">
+            <mat-list-item  *ngIf="aps.results[0] !== undefined">
+                <span class="attributeTitle"><strong>Gender:</strong>  {{ aps.results[0].Value}} ({{aps.results[0].Confidence | number:'1.0-0'}}%)</span> 
+            </mat-list-item>
+            <mat-list-item *ngIf="aps.results[1] !== undefined">
+                 <span class="attributeTitle"><strong>Age Range:</strong>  {{ aps.results[1].Low}}  - {{ aps.results[1].High}} years old</span> 
+            </mat-list-item>
+            <mat-list-item *ngIf="aps.results[2] !== undefined">
+                <span class="attributeTitle"><strong>Smile:</strong>  {{ aps.results[2].Value }} ({{aps.results[2].Confidence | number:'1.0-0'}}%)</span> 
+            </mat-list-item>
+            <mat-list-item *ngIf="aps.results[3] !== undefined">
+                <span class="attributeTitle"><strong>Emotions:</strong>  
+                
+                <span *ngFor="let result of aps.results[3]" >
+                  {{ result.Type }} ({{result.Confidence | number:'1.0-0'}}%), 
+                </span>
+            </span> 
+            </mat-list-item>
+            <mat-list-item *ngIf="aps.results[4] !== undefined">
+                <span class="attributeTitle"><strong>Mustache:</strong>  {{ aps.results[4].Value }} ({{aps.results[4].Confidence | number:'1.0-0'}}%)</span> 
+            </mat-list-item>
+            <mat-list-item *ngIf="aps.results[5] !== undefined">
+                <span class="attributeTitle"><strong>Eyeglasses:</strong>  {{ aps.results[5].Value }} ({{aps.results[5].Confidence | number:'1.0-0'}}%)</span> 
+            </mat-list-item>
+        </mat-list>
+        -->
+
+
+

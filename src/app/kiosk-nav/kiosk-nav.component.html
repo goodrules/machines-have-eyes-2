@@ -1,0 +1,11 @@
+<mat-menu #appMenu="matMenu">
+    <button mat-menu-item routerLink="/attract">Attract</button>
+  <button mat-menu-item routerLink="/welcome">Welcome</button>
+  <button mat-menu-item routerLink="/experience">Experience</button>
+  <button mat-menu-item routerLink="/thank-you">Thank You</button>
+</mat-menu>
+
+<button mat-icon-button [matMenuTriggerFor]="appMenu">
+  <mat-icon class="white-icon">more_vert</mat-icon>
+</button>
+

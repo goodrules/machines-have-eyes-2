@@ -1,0 +1,14 @@
+
+    <div class="center" style="width:277px;">
+        <img [src]="image" style="width:277px;"/>
+    </div>
+    <div class="slide-title">
+            <h1>{{ drinkName }}</h1>
+            <h2>{{ ingredients }}</h2>
+            <p>{{ description }}</p>
+        </div>
+    <div class="center" style="width: 535px; text-align: center; font-family: 'Oswald-light'; padding-top: 30px">
+        <p>Was this a good drink recommendation?</p>
+        <button mat-raised-button routerLink="/welcome" style="margin: 20px">Yes</button>
+        <button mat-raised-button routerLink="/welcome" style="margin: 20px">No</button>
+    </div>
